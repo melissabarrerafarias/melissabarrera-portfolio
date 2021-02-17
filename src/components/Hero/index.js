@@ -1,5 +1,4 @@
 import React from 'react';
-// import heroImage from '../../assets/images/daisies.jfif';
 
 function Hero() {
     return (
