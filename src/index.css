@@ -18,6 +18,27 @@ body {
   background-color: var(--cute-green);
 }
 
+/* hero section*/ 
+.hero-image {
+  background-image:url("./assets/images/daisies-background.jfif");
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+  background-attachment: fixed;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.hero-text {
+  margin: 400px; 
+  color: white;
+  font-family: 'Cabin';
+  font-size: 40px; 
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
 /* About Me Section */
 .about-me-header {
   font-family: 'Rubik'; 
@@ -34,7 +55,5 @@ body {
 .about-description {
   font-family: 'Cabin';
   font-size: 25px; 
-
-
 }
 

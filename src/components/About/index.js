@@ -5,7 +5,7 @@ function About() {
     return (
         <section>
             <div className="container">
-                <div class="row">
+                <div className="row">
                     <div className="col-md-6 mt-5">
                         <h1 id="about" className="about-me-header mb-3">Get To Know Me!</h1>
                         <img src={profileImage} className="profile-photo" />
