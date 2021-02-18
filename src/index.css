@@ -81,12 +81,29 @@ a:link {
   max-width: 50%; 
   max-height: 100%; 
   border-radius: 200px;
-  box-shadow: 15px 15px 15px var(--forest-green);
+  box-shadow: 15px 15px 15px var(--forest-green)
 }
 
 .about-description {
   font-family: 'Cabin';
   font-size: 25px; 
+}
+
+/* contact */ 
+
+.form-text {
+  font-family: "Rubik";
+  font-size: 25px;
+}
+
+.contact-btn {
+  background-color: var(--calming-blue);
+  font-family: "Space Mono";
+  font-size: 20px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.79);
 }
 
 /* footer */ 
@@ -96,5 +113,15 @@ a:link {
 
 .footer-links {
   font-size: 50px; 
+  padding: 0;
+  transition-duration: 500ms;
+}
+
+.footer-links:hover {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(1.4);
+  color: var(--baby-yellow);
+  text-shadow: 2px 4px 6px var(--baby-yellow);
 }
 
