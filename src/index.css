@@ -68,8 +68,13 @@ a:link {
 
 /* About Me Section */
 .about-me-header {
-  font-family: 'Rubik'; 
-  font-size: 40px;
+  font-family: 'Cabin'; 
+  font-size: 50px;
+  text-shadow: 1px 1px 1px; 
+  padding: 10px;
+  border-radius: 20px 20px 20px;
+  background-color: var(--sky-gray);
+  border-style: double;
 }
 
 .profile-photo {

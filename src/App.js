@@ -4,6 +4,7 @@ import './index.css';
 import About from './components/About';
 import Hero from './components/Hero'; 
 import Nav from './components/Nav'; 
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav></Nav>
       <Hero></Hero>
       <main> 
+        <Portfolio></Portfolio>
         <About></About>
       </main>
     </div>

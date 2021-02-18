@@ -11,16 +11,16 @@ function Nav() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#">About Me</a>
+                            <a className="nav-link mr-3" href="#about">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#">Portfolio</a>
+                            <a className="nav-link mr-3" href="#portfolio">Portfolio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#">Contact</a>
+                            <a className="nav-link mr-3" href="#contact">Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#" tabindex="-1" aria-disabled="true">Resume</a>
+                            <a className="nav-link mr-3" href="#resume" tabindex="-1" aria-disabled="true">Resume</a>
                         </li>
                     </ul>
                 </div>
