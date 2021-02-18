@@ -10,6 +10,8 @@ import Portfolio from './components/Portfolio';
 
 function App() {
 
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [nav] = useState([
     {
       name: "portfolio"
@@ -24,12 +26,19 @@ function App() {
         nav={nav}
         setCurrentNav={setCurrentNav}
         currentNav={currentNav}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <Hero />
       <main>
-        <Portfolio currentNav={currentNav}/>
-        <Contact />
-        <About />
+        {!contactSelected ? (
+          <>
+            <Portfolio currentNav={currentNav}></Portfolio>
+            <About></About>
+          </>
+        ) : (
+            <Contact />
+          )}
         <Footer />
       </main>
     </div>

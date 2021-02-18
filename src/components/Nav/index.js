@@ -3,9 +3,11 @@ import React, { useState } from 'react';
 function Nav(props) {
 
     const {
-        nav=[], 
-        setCurrentNav, 
-        currentNav
+        nav = [],
+        setCurrentNav,
+        currentNav,
+        contactSelected,
+        setContactSelected
     } = props
 
     return (
@@ -18,20 +20,16 @@ function Nav(props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#about">About Me</a>
+                            <a className="nav-link mr-3" href="#about" onClick={() => setContactSelected(false)}>About Me</a>
                         </li>
-
-                        {nav.map((navSection) => (
-                            <li className={`nav-item ${currentNav.name === navSection.name && 'navActive'}`} key ={navSection.name}>
-                                <span onClick={() => {setCurrentNav(navSection)}}>{navSection.name}</span>
-                        </li>
-                        ))}
-                        
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#contact">Contact</a>
+                            <a className="nav-link mr-3" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link mr-3" href="#resume" tabindex="-1" aria-disabled="true">Resume</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setContactSelected(false)}}>Portfolio</a>
                         </li>
                     </ul>
                 </div>
