@@ -7,7 +7,11 @@ function Nav(props) {
         setCurrentNav,
         currentNav,
         contactSelected,
-        setContactSelected
+        setContactSelected, 
+        portfolioSelected, 
+        setPortfolioSelected, 
+        aboutSelected, 
+        setAboutSelected
     } = props
 
     return (
@@ -20,16 +24,16 @@ function Nav(props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#about" onClick={() => setContactSelected(false)}>About Me</a>
+                            <a className="nav-link mr-3" href="#about" onClick={() => {setAboutSelected(false); setPortfolioSelected(false); setContactSelected(false)}}>About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
+                            <a className="nav-link mr-3" href="#contact" onClick={() => {setPortfolioSelected(false); setAboutSelected(true); setContactSelected(true)}}>Contact</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link mr-3" href="#resume" tabindex="-1" aria-disabled="true">Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setContactSelected(false)}}>Portfolio</a>
+                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setAboutSelected(true); setPortfolioSelected(true); setContactSelected(false)}}>Portfolio</a>
                         </li>
                     </ul>
                 </div>
