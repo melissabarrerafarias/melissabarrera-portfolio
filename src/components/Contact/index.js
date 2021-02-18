@@ -60,7 +60,7 @@ function Contact() {
                                 <p className="error-msg mt-2">{errorMessage}</p>
                             </div>
                         )}
-                        <button type="submit" className="btn contact-btn mt-3">enter</button>
+                        <button type="submit" className="btn contact-btn mt-3 mb-5">enter</button>
                     </form>
                 </div>
             </div>

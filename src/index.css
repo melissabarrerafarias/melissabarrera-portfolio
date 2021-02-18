@@ -111,6 +111,11 @@ a:link {
   color: rgb(206, 6, 6);
 }
 
+.img {
+  max-width: 100%;
+  min-height: 100%
+}
+
 /* footer */ 
 .footer-background {
   background-color: var(--moss-green);
