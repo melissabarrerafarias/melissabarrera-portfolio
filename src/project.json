@@ -3,7 +3,42 @@
         "id": 1,
         "project": "Fly High", 
         "scrnshot": "fly-high",
-        "deployed-link": "linkforflyhigh", 
-        "github-link":"githublink"
+        "deployed-link": "https://treguv.github.io/fly-high/", 
+        "github-link": "https://github.com/treguv/fly-high"
+    }, 
+    {
+        "id": 2, 
+        "project": "Weather App", 
+        "scrnshot": "weather", 
+        "deployed-link": "https://melissabarrerafarias.github.io/weather-app/", 
+        "github-link": "https://github.com/melissabarrerafarias/weather-app"
+    }, 
+    {
+        "id": 3, 
+        "project": "stuckInside", 
+        "scrnshot": "",  
+        "deployed-link": "http://www.stuckinside.tech/", 
+        "github-link": "https://github.com/treguv/stuckInside"
+    }, 
+    {
+        "id": 4, 
+        "project": "Tech-Applied", 
+        "scrnshot": "", 
+        "deployed-link": "https://glacial-oasis-78565.herokuapp.com/", 
+        "github-link": "https://github.com/melissabarrerafarias/tech-blog"
+    }, 
+    {
+        "id": 5, 
+        "project": "Team Profile Generator", 
+        "scrnshot": "", 
+        "deployed-link": "https://github.com/melissabarrerafarias/Team-Profile-Generator", 
+        "github-link": "https://github.com/melissabarrerafarias/Team-Profile-Generator"
+    }, 
+    {
+        "id": 6, 
+        "project": "Social Network API (NoSQL)", 
+        "scrnshot": "", 
+        "deployed-link": "https://github.com/melissabarrerafarias/SN-API-NoSQL", 
+        "github-link": "https://github.com/melissabarrerafarias/SN-API-NoSQL"
     }
 ]

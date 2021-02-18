@@ -89,3 +89,12 @@ a:link {
   font-size: 25px; 
 }
 
+/* footer */ 
+.footer-background {
+  background-color: var(--moss-green);
+}
+
+.footer-links {
+  font-size: 50px; 
+}
+
