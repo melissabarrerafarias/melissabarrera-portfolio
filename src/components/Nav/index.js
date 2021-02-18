@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Nav() {
+function Nav(props) {
+
+    const {
+        nav=[], 
+        setCurrentNav, 
+        currentNav
+    } = props
+
     return (
         <header className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -13,9 +20,13 @@ function Nav() {
                         <li className="nav-item">
                             <a className="nav-link mr-3" href="#about">About Me</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link mr-3" href="#portfolio">Portfolio</a>
+
+                        {nav.map((navSection) => (
+                            <li className={`nav-item ${currentNav.name === navSection.name && 'navActive'}`} key ={navSection.name}>
+                                <span onClick={() => {setCurrentNav(navSection)}}>{navSection.name}</span>
                         </li>
+                        ))}
+                        
                         <li className="nav-item">
                             <a className="nav-link mr-3" href="#contact">Contact</a>
                         </li>

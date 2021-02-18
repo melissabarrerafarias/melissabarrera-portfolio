@@ -1,22 +1,16 @@
 import React from 'react'; 
 import Project from '../Project'; 
 
-// function Portfolio({ thisProject }) {
-//     const { name } = thisProject;
+function Portfolio({ currentNav }) {
 
-//     return (
-//         <section>
-//             <div className="container">
-//                 <div className="row"> 
-//                 <h1>Portfolio</h1>
-//                 <div className="col-md-6"> 
-//                 <h2>{thisProject.name}</h2>
-//                 <Project/>
-//                 </div>
-//                 </div> 
-//             </div>
-//         </section>
-//     );
-// }
+    const { name } = currentNav;
+    
+    return (
+        <section>
+            <h1>{name}</h1>
+            <Project />
+        </section>
+    );
+}
 
-// export default Portfolio;
+export default Portfolio;

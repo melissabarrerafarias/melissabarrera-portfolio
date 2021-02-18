@@ -44,6 +44,10 @@ a:link {
   color: var(--sky-gray);
 }
 
+.navActive {
+  color: var(--sky-gray);
+}
+
 
 /* hero section*/ 
 .hero-image {
