@@ -4,16 +4,16 @@ import './index.css';
 import About from './components/About';
 import Hero from './components/Hero'; 
 import Nav from './components/Nav'; 
-import Portfolio from './components/Portfolio';
+// import Portfolio from './components/Portfolio';
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
-      <Hero></Hero>
+      <Nav />
+      <Hero />
       <main> 
-        <Portfolio></Portfolio>
-        <About></About>
+        
+        <About />
       </main>
     </div>
   );

@@ -1,17 +1,8 @@
 import React from 'react';
 
-function Project() {
-    projects = [
-        {
-            project: "Fly High", 
-            srcnshot: "fly-high"
-        }, 
-        {
-            project: "Weather App", 
-            scrnshot: "weather"
-        }
-    ];
+// function Project() {
+//     
     
-}
+// }
 
-export default Project; 
+// export default Project;
