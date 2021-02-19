@@ -11,11 +11,39 @@ function Project() {
             githublink: "https://github.com/treguv/fly-high"
         },
         {
+            name: "stuckInside",
+            navigation: "portfolio",
+            projectName: "stuckInside",
+            deployedlink: "http://www.stuckinside.tech/", 
+            githublink: "https://github.com/treguv/stuckInside"
+        },
+        {
+            name: "tech-applied", 
+            navigation: "portfolio", 
+            projectName: "Tech-Applied", 
+            deployedlink: "https://glacial-oasis-78565.herokuapp.com/", 
+            githublink: "https://github.com/melissabarrerafarias/tech-blog"
+        },
+        {
             name: "weather",
             navigation: 'portfolio', 
             projectName: "Weather App", 
             deployedlink: "https://melissabarrerafarias.github.io/weather-app/", 
             githublink: "https://github.com/melissabarrerafarias/weather-app"
+        }, 
+        {
+            name: "team-generator",
+            navigation: 'portfolio', 
+            projectName: "Team Profile Generator", 
+            deployedlink: "https://github.com/melissabarrerafarias/Team-Profile-Generator", 
+            githublink: "https://github.com/melissabarrerafarias/Team-Profile-Generator"
+        }, 
+        {
+            name: "SNA-NoSQL", 
+            navigation: "portfolio", 
+            projectName: "Social Network API (NoSQL)", 
+            deployedlink: "https://github.com/melissabarrerafarias/SN-API-NoSQL", 
+            githublink: "https://github.com/melissabarrerafarias/SN-API-NoSQL"
         }
     ])
 
