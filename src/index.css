@@ -184,3 +184,15 @@ a:link {
   text-shadow: 2px 4px 6px var(--baby-yellow);
 }
 
+/* media queries */ 
+
+@media (max-width: 767.98px) {
+  .about-me-header {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    font-size: 20px; 
+  }
+}
+
