@@ -7,7 +7,7 @@ function Portfolio({ currentNav }) {
     
     return (
         <section>
-            <h1>{name}</h1>
+            <h1 className="text-center m-5 portfolio-text">Projects I've Worked On</h1>
             <Project />
         </section>
     );

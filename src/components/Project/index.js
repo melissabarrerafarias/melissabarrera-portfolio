@@ -24,8 +24,8 @@ function Project() {
             <div className="container">
                 <div className="row align-items-center">
                     {projectPhotos.map((photo) => (
-                        <div className="col-md-6">
-                            <div className="card">
+                        <div className="col mb-5">
+                            <div className="card mb-5" style={{width: "100%"}}>
                                 <img
                                     src={require(`../../assets/images/${photo.name}.png`).default}
                                     alt={photo.name}
@@ -33,9 +33,11 @@ function Project() {
                                     className="project-scrnshots"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">{photo.projectName}</h5>
-                                    <a href={photo.deployedlink} className="btn btn-primary"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href={photo.githublink} className="btn btn-primary"><i class="fab fa-github"></i></a>
+                                    <h5 className="card-title d-flex justify-content-center mt-3">{photo.projectName}</h5>
+                                    <div className="d-flex justify-content-center">
+                                    <a href={photo.deployedlink} className="btn card-btn"><i className="fas fa-external-link-alt"></i></a>
+                                    <a href={photo.githublink} className="btn card-btn"><i className="fab fa-github"></i></a>
+                                    </div>
                                 </div>
                             </div>
 
