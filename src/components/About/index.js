@@ -8,9 +8,9 @@ function About() {
                 <h1 id="about" className="about-me-header mt-5 text-center">Get To Know Me</h1>
                 <div className="row">
                     <div className="col-md-6 mt-5">
-                        <img src={profileImage} className="profile-photo" />
+                        <img src={profileImage} className="profile-photo"/>
                     </div>
-                    <div className="col-md-6 mt-5">
+                    <div className="col-md-6 mt-5 mb-5">
                         <p className="about-description">Hello! My name is Melissa Barrera and I am an 18 year old full-stack web developer! Born and raised in the culture
                         rich San Jose, California and currently reside in the beautiful state of Washington. Eager to start working, I pushed myself to graduate a year early from high-school and worked 
                         at an elementary school for a little more than a year. Covid-19 hit, and I saw the extra time as an opportunity to learn something new! I took on the challenge of the 
