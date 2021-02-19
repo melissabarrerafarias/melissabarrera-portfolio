@@ -11,12 +11,12 @@ function About() {
                         <img src={profileImage} className="profile-photo" />
                     </div>
                     <div className="col-md-6 mt-5">
-                        <p className="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        t esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className="about-description">Hello! My name is Melissa Barrera and I am an 18 year old full-stack web developer! Born and raised in the culture
+                        rich San Jose, California and currently reside in the beautiful state of Washington. Eager to start working, I pushed myself to graduate a year early from high-school and worked 
+                        at an elementary school for a little more than a year. Covid-19 hit, and I saw the extra time as an opportunity to learn something new! I took on the challenge of the 
+                        coding bootcamp UC Berkeley offers. It is an intense six month course where you learn the skills necessary to become a web developer! Though there were moments where I felt defeated, 
+                        I managed to push through and it was worth it! From never having written a line of code to creating these amazing apps myself and with teams only six months later... has been wild! 
+                        I look forward to graduating, expanding my learning, and bettering myself! </p>
                     </div>
                 </div>
 
