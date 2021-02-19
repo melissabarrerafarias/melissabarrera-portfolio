@@ -11,7 +11,9 @@ function Nav(props) {
         portfolioSelected, 
         setPortfolioSelected, 
         aboutSelected, 
-        setAboutSelected
+        setAboutSelected, 
+        resumeSelected, 
+        setResumeSelected
     } = props
 
     return (
@@ -24,16 +26,16 @@ function Nav(props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#about" onClick={() => {setAboutSelected(false); setPortfolioSelected(false); setContactSelected(false)}}>About Me</a>
+                            <a className="nav-link mr-3" href="#about" onClick={() => {setResumeSelected(false);setAboutSelected(false); setPortfolioSelected(false); setContactSelected(false)}}>About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#contact" onClick={() => {setPortfolioSelected(false); setAboutSelected(true); setContactSelected(true)}}>Contact</a>
+                            <a className="nav-link mr-3" href="#contact" onClick={() => {setResumeSelected(false); setPortfolioSelected(false); setAboutSelected(true); setContactSelected(true)}}>Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#resume" tabindex="-1" aria-disabled="true">Resume</a>
+                            <a className="nav-link mr-3" href="#resume" onClick={() => {setResumeSelected(true); setPortfolioSelected(false); setAboutSelected(true); setContactSelected(false)}} aria-disabled="true">Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setAboutSelected(true); setPortfolioSelected(true); setContactSelected(false)}}>Portfolio</a>
+                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setResumeSelected(false); setAboutSelected(true); setPortfolioSelected(true); setContactSelected(false)}}>Portfolio</a>
                         </li>
                     </ul>
                 </div>

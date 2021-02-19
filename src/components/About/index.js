@@ -1,11 +1,9 @@
 import React from 'react';
 import profileImage from '../../assets/profile-photo/melissa-image.jpg';
-import myResume from '../../assets/profile-photo/resume.pdf'; 
 
 function About() {
     return (
         <section>
-            <a href={myResume} download="MelissaResume">click here to download</a>
             <div className="container">
                 <h1 id="about" className="about-me-header mt-5 text-center">Get To Know Me</h1>
                 <div className="row">

@@ -7,17 +7,19 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume'; 
 
 function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false); 
   const [aboutSelected, setAboutSelected] = useState(false); 
+  const [resumeSelected, setResumeSelected] = useState(false); 
 
   const [nav] = useState([
     {
       name: "portfolio"
-    }
+    }, 
   ])
 
   const [currentNav, setCurrentNav] = useState(nav[0]);
@@ -34,9 +36,17 @@ function App() {
         setPortfolioSelected={setPortfolioSelected}
         aboutSelected={aboutSelected}
         setAboutSelected={setAboutSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
       ></Nav>
       <Hero />
       <main>
+      {!resumeSelected ? (
+          <>
+          </>
+        ) : (
+            <Resume />
+          )}
         {!aboutSelected ? (
           <>
           <About></About>

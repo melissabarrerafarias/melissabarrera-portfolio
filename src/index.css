@@ -165,6 +165,23 @@ a:link {
   font-size: 40px;
 }
 
+/* resume */ 
+.resume-download {
+  font-size: 25px; 
+  font-family: 'Cabin';
+  font-weight: bold;
+}
+
+.resume-download-icon {
+  font-size: 40px; 
+  transition-duration: 500ms;
+}
+
+.resume-download-icon:hover {
+  color: var(--baby-yellow);
+  text-shadow: 2px 4px 6px var(--baby-yellow);
+}
+
 /* footer */ 
 .footer-background {
   background-color: var(--moss-green);
