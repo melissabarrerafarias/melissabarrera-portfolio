@@ -4,6 +4,13 @@ import photo from '../../assets/images/fly-high.png';
 function Project() {
     const [projectPhotos] = useState([
         {
+            name: 'superherosmash', 
+            navigation: 'portfolio', 
+            projectName: 'SuperHeroSmash', 
+            deployedlink: 'https://superherosmash.herokuapp.com/', 
+            githublink: 'https://github.com/melissabarrerafarias/superherosmash'
+        },
+        {
             name: 'fly-high',
             navigation: 'portfolio', 
             projectName: "Fly High", 
