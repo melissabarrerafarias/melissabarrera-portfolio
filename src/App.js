@@ -17,14 +17,12 @@ function App() {
     <Router>
       <div>
         <Nav />
-        {/* <Hero />  */}
         <Switch> 
-          <Route exact path = "/about" component = {About}/>
+          <Route exact path = "/" component = {About}/>
           <Route exact path = "/contact" component = {Contact}/>
           <Route exact path = "/resume" component = {Resume} />
           <Route exact path = "/portfolio" component = {Portfolio}/>
         </Switch>
-        <Footer />
       </div>
     </Router>
     
