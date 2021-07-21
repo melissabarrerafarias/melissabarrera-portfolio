@@ -1,5 +1,8 @@
 // center of application 
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+
 import './index.css';
 import About from './components/About';
 import Hero from './components/Hero';
@@ -7,69 +10,25 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import Resume from './components/Resume'; 
+import Resume from './components/Resume';
 
 function App() {
 
-  const [contactSelected, setContactSelected] = useState(false);
-  const [portfolioSelected, setPortfolioSelected] = useState(false); 
-  const [aboutSelected, setAboutSelected] = useState(false); 
-  const [resumeSelected, setResumeSelected] = useState(false); 
-
-  const [nav] = useState([
-    {
-      name: "portfolio"
-    }, 
-  ])
-
-  const [currentNav, setCurrentNav] = useState(nav[0]);
-
   return (
-    <div>
-      <Nav
-        nav={nav}
-        setCurrentNav={setCurrentNav}
-        currentNav={currentNav}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-        portfolioSelected={portfolioSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        resumeSelected={resumeSelected}
-        setResumeSelected={setResumeSelected}
-      ></Nav>
-      <Hero />
-      <main>
-      {!resumeSelected ? (
-          <>
-          </>
-        ) : (
-            <Resume />
-          )}
-        {!aboutSelected ? (
-          <>
-          <About></About>
-          </>
-        ) : (
-          <>
-          </>
-        )}
-        {!contactSelected ? (
-          <>
-          </>
-        ) : (
-            <Contact />
-          )}
-          {!portfolioSelected ? (
-            <>
-            </>
-          ) : (
-            <Portfolio currentNav={currentNav}></Portfolio>
-          )}
+    <Router>
+      <div>
+        <Nav />
+        <Hero /> 
+        <Switch> 
+          <Route exact path = "/about" component = {About}/>
+          <Route exact path = "/contact" component = {Contact}/>
+          <Route exact path = "/resume" component = {Resume} />
+          <Route exact path = "/portfolio" component = {Portfolio}/>
+        </Switch>
         <Footer />
-      </main>
-    </div>
+      </div>
+    </Router>
+    
   );
 }
 

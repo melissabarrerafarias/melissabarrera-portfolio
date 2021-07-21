@@ -2,19 +2,19 @@ import React from 'react';
 
 function Nav(props) {
 
-    const {
-        nav = [],
-        setCurrentNav,
-        currentNav,
-        contactSelected,
-        setContactSelected, 
-        portfolioSelected, 
-        setPortfolioSelected, 
-        aboutSelected, 
-        setAboutSelected, 
-        resumeSelected, 
-        setResumeSelected
-    } = props
+    // const {
+    //     nav = [],
+    //     setCurrentNav,
+    //     currentNav,
+    //     contactSelected,
+    //     setContactSelected, 
+    //     portfolioSelected, 
+    //     setPortfolioSelected, 
+    //     aboutSelected, 
+    //     setAboutSelected, 
+    //     resumeSelected, 
+    //     setResumeSelected
+    // } = props
 
     return (
         <header className="sticky-top">
@@ -26,16 +26,16 @@ function Nav(props) {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#about" onClick={() => {setResumeSelected(false);setAboutSelected(false); setPortfolioSelected(false); setContactSelected(false)}}>About Me</a>
+                            <a className="nav-link mr-3" href="/about">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#contact" onClick={() => {setResumeSelected(false); setPortfolioSelected(false); setAboutSelected(true); setContactSelected(true)}}>Contact</a>
+                            <a className="nav-link mr-3" href="/contact">Contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#resume" onClick={() => {setResumeSelected(true); setPortfolioSelected(false); setAboutSelected(true); setContactSelected(false)}} aria-disabled="true">Resume</a>
+                            <a className="nav-link mr-3" href="/resume">Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="#portfolio" onClick={() => {setResumeSelected(false); setAboutSelected(true); setPortfolioSelected(true); setContactSelected(false)}}>Portfolio</a>
+                            <a className="nav-link mr-3" href="/portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </div>

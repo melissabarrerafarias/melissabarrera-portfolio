@@ -1,9 +1,7 @@
 import React from 'react'; 
 import Project from '../Project'; 
 
-function Portfolio({ currentNav }) {
-
-    const { name } = currentNav;
+function Portfolio() {
     
     return (
         <section>
