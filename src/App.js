@@ -1,7 +1,6 @@
 // center of application 
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 
 import './index.css';
 import About from './components/About';
@@ -18,7 +17,7 @@ function App() {
     <Router>
       <div>
         <Nav />
-        <Hero /> 
+        {/* <Hero />  */}
         <Switch> 
           <Route exact path = "/about" component = {About}/>
           <Route exact path = "/contact" component = {Contact}/>
