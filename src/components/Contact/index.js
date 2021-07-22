@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Footer from '../Footer'; 
+import Footer from '../Footer';
 
 
 function Contact() {
@@ -40,39 +40,53 @@ function Contact() {
     }
 
     return (
-        <section className="container mt-5">
-            <div className="row justify-content-center">
-                <div className="col-8 align-self-center">
-                    <form id="contact" onSubmit={handleSubmit}>
-                        <div className="mb-3">
-                            <label className="form-label form-text">name</label>
-                            <input onBlur={handleChange} type="text" name="name" className="form-control" id="name" aria-describedby="emailHelp" defaultValue={name} />
+        <div className="container mt-5">
+            <div className="row">
+
+                <div className="col-md-6 mt-5">
+                    <div className="row justify-content-center">
+                        <div className="col align-self-center">
+                            <form id="contact" onSubmit={handleSubmit}>
+                                <div className="mb-3">
+                                    <label className="form-label form-text">name</label>
+                                    <input onBlur={handleChange} type="text" name="name" className="form-control" id="name" aria-describedby="emailHelp" defaultValue={name} />
+                                </div>
+                                <div className="mb-3">
+                                    <label className="form-label form-text">email</label>
+                                    <input onBlur={handleChange} type="email" name="email" className="form-control" id="email" defaultValue={email} />
+                                </div>
+                                <div className="form-floating">
+                                    <label className="form-text">message</label>
+                                    <textarea onBlur={handleChange} name="message" className="form-control" placeholder="leave a message and I'll get back to you soon! :D" defaultValue={message} id="message" style={{ height: "100px" }}></textarea>
+                                </div>
+                                {errorMessage && (
+                                    <div>
+                                        <p className="error-msg mt-2">{errorMessage}</p>
+                                    </div>
+                                )}
+                                <button type="submit" className="btn contact-btn mt-3 mb-5">enter</button>
+                            </form>
                         </div>
-                        <div className="mb-3">
-                            <label className="form-label form-text">email</label>
-                            <input onBlur={handleChange} type="email" name="email" className="form-control" id="email" defaultValue={email} />
-                        </div>
-                        <div className="form-floating">
-                            <label className="form-text">message</label>
-                            <textarea onBlur={handleChange} name="message" className="form-control" placeholder="leave a message and I'll get back to you soon! :D" defaultValue={message} id="message" style={{ height: "100px" }}></textarea>
-                        </div>
-                        {errorMessage && (
-                            <div>
-                                <p className="error-msg mt-2">{errorMessage}</p>
-                            </div>
-                        )}
-                        <button type="submit" className="btn contact-btn mt-3 mb-5">enter</button>
-                    </form>
+                    </div>
                 </div>
-            </div> 
-                <div className="row">
-                    <a className="navbar-brand mx-auto footer-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
-                    <a className="navbar-brand mx-auto footer-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
-                    <a className="navbar-brand mx-auto footer-links" href="https://stackoverflow.com/users/14167549/melissa?tab=profile"><i className="fab fa-stack-overflow"></i></a>
-                    <a className="navbar-brand mx-auto footer-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
+
+                <div className="col-md-6 m-auto">
+                    
+                    <div className="row justify-content-center">
+                        <a className="mx-auto footer-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
+                        <a className="mx-auto footer-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
+                    </div>
+                    <div className = "row justify-content-center">
+                        <a className="mx-auto footer-links" href="https://stackoverflow.com/users/14167549/melissa?tab=profile"><i className="fab fa-stack-overflow"></i></a>
+                        <a className="mx-auto footer-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
+                    </div>
                 </div>
-        </section>
+
+            </div>
+
+
+        </div>
     );
 }
 
-export default Contact; 
+export default Contact;

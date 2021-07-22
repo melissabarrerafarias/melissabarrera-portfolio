@@ -21,7 +21,6 @@ body {
 
 a:link {
   text-decoration: none !important;
-  color: black
 }
 
 /* navigation */ 
@@ -139,6 +138,7 @@ a:link {
   color: rgb(206, 6, 6);
 }
 
+
 /* portfolio */ 
 
 .portfolio-text {
@@ -216,10 +216,11 @@ a:link {
 }
 
 .footer-links {
-  font-size: 50px; 
+  font-size: 80px; 
   padding: 0;
   transition-duration: 500ms;
-  color: black
+  color: black; 
+  color: white
 }
 
 .footer-links:hover {
