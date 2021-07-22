@@ -64,17 +64,13 @@ function Contact() {
                         <button type="submit" className="btn contact-btn mt-3 mb-5">enter</button>
                     </form>
                 </div>
-            </div>
-            <h1>My Socials:</h1>
-            
-                <div className="container-fluid">
+            </div> 
+                <div className="row">
                     <a className="navbar-brand mx-auto footer-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
                     <a className="navbar-brand mx-auto footer-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
                     <a className="navbar-brand mx-auto footer-links" href="https://stackoverflow.com/users/14167549/melissa?tab=profile"><i className="fab fa-stack-overflow"></i></a>
                     <a className="navbar-brand mx-auto footer-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
                 </div>
-           
-            {/* <Footer /> */}
         </section>
     );
 }
