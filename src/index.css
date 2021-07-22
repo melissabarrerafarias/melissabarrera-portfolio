@@ -194,20 +194,24 @@ a:link {
 }
 
 /* resume */ 
-.resume-download {
-  font-size: 25px; 
+.resume-section {
+  font-size: 18px; 
   font-family: 'Cabin';
   font-weight: bold;
 }
 
-.resume-download-icon {
-  font-size: 40px; 
-  transition-duration: 500ms;
+.resume-download {
+  color: #004777
 }
 
-.resume-download-icon:hover {
-  color: var(--baby-yellow);
-  text-shadow: 2px 4px 6px var(--baby-yellow);
+.certificate {
+  max-width: 100%;
+  border-style: double;
+}
+
+.resume-icons {
+  font-size: 80px;
+  color: white
 }
 
 /* footer */ 
