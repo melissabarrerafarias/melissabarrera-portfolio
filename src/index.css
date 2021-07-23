@@ -15,7 +15,8 @@
 /* font-family: 'Cabin', 'Rubik', 'Space Mono' */
 
 body {
-  background-color: var(--cute-green);
+  /* background-color: var(--cute-green); */
+  background-color: #191A1D;
 }
 
 
@@ -68,12 +69,7 @@ a:link {
 /* About Me Section */
 .about-me-header {
   font-family: 'Cabin'; 
-  font-size: 50px;
-  text-shadow: 1px 1px 1px; 
-  padding: 10px;
-  border-radius: 20px 20px 20px;
-  background-color: var(--sky-gray);
-  border-style: double;
+  color: #FAFAFA
 }
 
 .split {
@@ -88,12 +84,12 @@ a:link {
 
 .left {
   left: 0;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 .right {
   right: 0;
-  background-color: var(--cute-green);
+  background-color:#191A1D;
 }
 
 .center {
@@ -114,6 +110,7 @@ a:link {
 .about-description {
   font-family: 'Cabin';
   font-size: 15px; 
+  color: #FAFAFA
 }
 
 /* contact */ 
@@ -121,6 +118,7 @@ a:link {
 .form-text {
   font-family: "Rubik";
   font-size: 15px;
+  color: #FAFAFA
 }
 
 .contact-btn {
@@ -130,7 +128,7 @@ a:link {
 }
 
 .form-control {
-  background-color: rgba(255, 255, 255, 0.79);
+  background-color: #FAFAFA;
 }
 
 .error-msg {
@@ -228,7 +226,8 @@ a:link {
 .resume-section {
   font-size: 18px; 
   font-family: 'Cabin';
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: #FAFAFA
 }
 
 .resume-download {
@@ -242,7 +241,7 @@ a:link {
 
 .resume-icons {
   font-size: 80px;
-  color: white
+  color: #FAFAFA
 }
 
 /* footer */ 
@@ -254,8 +253,7 @@ a:link {
   font-size: 80px; 
   padding: 0;
   transition-duration: 500ms;
-  color: black; 
-  color: white
+  color: #FAFAFA
 }
 
 .footer-links:hover {
