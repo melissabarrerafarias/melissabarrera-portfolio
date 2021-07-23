@@ -27,17 +27,26 @@ a:link {
 /* navigation */ 
 
 .navbar {
-  background-color: var(--calming-blue);
+  /* background-color: #212121; */
+  background-color: #121212;
 }
 
 .nav-text-name {
   font-size: 20px; 
-  font-family: 'Space Mono'
+  font-family: 'Rubik'; 
+}
+
+.navbar-light .navbar-brand {
+  color: #FAFAFA;
 }
 
 .nav-text {
-  font-size: 20px; 
+  font-size: 15px; 
   font-family: "Rubik";
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FAFAFA;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
