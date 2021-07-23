@@ -26,6 +26,60 @@ function Portfolio() {
                     </div>
                 </div>
             </section>
+            <hr className = "project-line"></hr>
+            <section className = "container all-projects">
+                <div className = "row">
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/superherosmash.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+
+                <div className = "col-md-6 project-indv"> 
+                <img src={require(`../../assets/images/stuckInside.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                </div>
+
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/fly-high.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/weather.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/tech-applied.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/team-generator.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+
+                <div className = "col-md-6 project-indv">
+                        <img src={require(`../../assets/images/SNA-NoSQL.png`).default}
+                        className="project-scrnshots"
+                        ></img>
+                        
+                </div>
+                
+                </div>
+            
+            </section>
 
             {/* <Project /> */}
         </main>

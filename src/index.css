@@ -15,7 +15,6 @@
 /* font-family: 'Cabin', 'Rubik', 'Space Mono' */
 
 body {
-  /* background-color: var(--cute-green); */
   background-color: #191A1D;
 }
 
@@ -27,7 +26,6 @@ a:link {
 /* navigation */ 
 
 .navbar {
-  /* background-color: #212121; */
   background-color: #121212;
 }
 
@@ -112,8 +110,6 @@ a:link {
 .profile-photo {
   max-width: 100%; 
   max-height: 100%; 
-  /* border-radius: 200px; */
-  /* box-shadow: 15px 15px 15px var(--forest-green) */
 }
 
 .about-description {
@@ -150,12 +146,7 @@ a:link {
 
 .portfolio-text {
   font-family: "Cabin";
-  /* text-shadow: 1px 1px 1px; */
   color: #FAFAFA
-  /* text-align: left; */
-  /* border-radius: 20px 20px 20px;
-  background-color: var(--sky-gray);
-  border-style: double; */
 }
 
 .projects-div {
@@ -163,8 +154,6 @@ a:link {
 }
 
 .arrow {
-  /* border: solid white; */
-  /* border-width: 0 3px 3px 0; */
   color: white;
   display: inline-block;
   padding: 3px;
@@ -172,21 +161,14 @@ a:link {
   -webkit-transform: rotate(45deg);
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  /* transform-origin: bottom; */
   -webkit-animation: bounce 2s infinite;
   animation: arrow 2s infinite;
 }
-
-/* .arrow-bounce {
-  animation-name: arrow-bounce;
-  
-} */
 
 @keyframes arrow {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-20px); }
   100% { transform: translateY(0); }
-
 }
 
 .card {
@@ -231,11 +213,28 @@ a:link {
   font-size: 40px;
 }
 
+.project-line {
+  border: 1px solid #fafafa6a;
+  margin-top: 25%;
+}
+
+.all-projects {
+  margin-top: 5%;
+}
+
+.project-scrnshots {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.project-indv {
+  margin-top: 10%; 
+}
+
 /* resume */ 
 .resume-section {
   font-size: 18px; 
   font-family: 'Cabin';
-  /* font-weight: bold; */
   color: #FAFAFA
 }
 
