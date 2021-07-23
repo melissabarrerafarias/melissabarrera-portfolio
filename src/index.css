@@ -120,7 +120,7 @@ a:link {
 
 .form-text {
   font-family: "Rubik";
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .contact-btn {
@@ -143,12 +143,16 @@ a:link {
 
 .portfolio-text {
   font-family: "Cabin";
-  font-weight: bold; 
-  text-shadow: 1px 1px 1px; 
-  padding: 10px;
-  border-radius: 20px 20px 20px;
+  /* text-shadow: 1px 1px 1px; */
+  color: #FAFAFA
+  /* text-align: left; */
+  /* border-radius: 20px 20px 20px;
   background-color: var(--sky-gray);
-  border-style: double;
+  border-style: double; */
+}
+
+.projects-div {
+  margin-top: 10%
 }
 
 .card {
