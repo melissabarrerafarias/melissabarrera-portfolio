@@ -155,6 +155,33 @@ a:link {
   margin-top: 10%
 }
 
+.arrow {
+  /* border: solid white; */
+  /* border-width: 0 3px 3px 0; */
+  color: white;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* transform-origin: bottom; */
+  -webkit-animation: bounce 2s infinite;
+  animation: arrow 2s infinite;
+}
+
+/* .arrow-bounce {
+  animation-name: arrow-bounce;
+  
+} */
+
+@keyframes arrow {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+
+}
+
 .card {
   position: relative;
   display: -ms-flexbox;
