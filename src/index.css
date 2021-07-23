@@ -225,7 +225,38 @@ a:link {
 .project-scrnshots {
   max-width: 100%;
   min-height: 90%;
+  position: relative;
 }
+
+.project-desc {
+  position: absolute;
+  top: 0;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  font-size: 15px;
+  font-family: 'Rubik';
+  text-align: center;
+  margin-top: 22%
+}
+
+#superherosmash:hover .project-desc, #stuckInside:hover .project-desc, #fly-high:hover .project-desc, #weather:hover .project-desc, 
+#tech-applied:hover .project-desc, #team-generator:hover .project-desc, #noSQL:hover .project-desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#superherosmash:hover .project-scrnshots, #stuckInside:hover .project-scrnshots, #fly-high:hover .project-scrnshots, #weather:hover .project-scrnshots,
+#tech-applied:hover .project-scrnshots, #team-generator:hover .project-scrnshots, #noSQL:hover .project-scrnshots{
+  opacity: .2;
+}
+
+
 
 .project-indv {
   margin-top: 10%; 
