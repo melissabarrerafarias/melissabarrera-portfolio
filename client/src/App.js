@@ -13,6 +13,7 @@ import SuperSecret from './components/SuperSecret.js';
 
 function App() {
   const PAGE = process.env.SUPERSECRETCODE;
+  console.log(PAGE)
 
   return (
     <Router>
