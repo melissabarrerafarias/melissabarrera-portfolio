@@ -258,7 +258,7 @@ a:link {
 /* SUPER SECRET PAGE */ 
 .messages {
   border-style: double;
-  color: white; 
+  color: #FAFAFA; 
   margin: 15px; 
   padding: 15px
 }

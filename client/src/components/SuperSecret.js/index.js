@@ -18,8 +18,7 @@ function SuperSecret() {
                 console.log(err);
             });
     }, [])
-
-    // console.log(messages)
+    
     return (
         <div className="container">
             {!data ? (

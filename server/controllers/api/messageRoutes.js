@@ -3,7 +3,7 @@ const Message = require('../../models');
 
 router.get('/', (req, res) => { // get all messages 
     Message.find({})
-        // .populate('reports')
+        .sort({ _id: -1 })
         .then(userData => res.json(userData))
         .catch(err => {
             console.log(err);
@@ -23,4 +23,4 @@ router.post('/', (req, res) => { // create new message
         })
 });
 
-module.exports = router; 
+module.exports = router;
