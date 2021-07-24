@@ -261,6 +261,15 @@ a:link {
   .about-description {
     font-size: 12px; 
   }
+
+   /* RESUME PAGE */
+   .resume-icons {
+    font-size: 50px;
+  }
+
+  .resume-section {
+    font-size: 15px; 
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -282,6 +291,7 @@ a:link {
     font-size: 15px;
     margin-top: 15px 
   }
+
 }
 
 @media (max-width: 576px) {
@@ -310,7 +320,6 @@ a:link {
   #about-me-desc-lg {
     display: none;
   }
-  
   
   .about-description {
     font-size: 15px; 
