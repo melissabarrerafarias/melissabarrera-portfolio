@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Footer from '../Footer';
 
 
 function Contact() {
@@ -73,12 +72,12 @@ function Contact() {
                 <div className="col-md-6 m-auto">
                     
                     <div className="row justify-content-center">
-                        <a className="mx-auto footer-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
-                        <a className="mx-auto footer-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
+                        <a className="mx-auto contact-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
+                        <a className="mx-auto contact-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
                     </div>
                     <div className = "row justify-content-center">
-                        <a className="mx-auto footer-links" href="https://stackoverflow.com/users/14167549/melissa?tab=profile"><i className="fab fa-stack-overflow"></i></a>
-                        <a className="mx-auto footer-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
+                        <a className="mx-auto contact-links" href="https://stackoverflow.com/users/14167549/melissa?tab=profile"><i className="fab fa-stack-overflow"></i></a>
+                        <a className="mx-auto contact-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
                     </div>
                 </div>
 
