@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/melissabarrera-portfolio/static/css/main.95994c88.chunk.css",
-    "main.js": "/melissabarrera-portfolio/static/js/main.f9f2ad31.chunk.js",
-    "main.js.map": "/melissabarrera-portfolio/static/js/main.f9f2ad31.chunk.js.map",
-    "runtime-main.js": "/melissabarrera-portfolio/static/js/runtime-main.0f757c9c.js",
-    "runtime-main.js.map": "/melissabarrera-portfolio/static/js/runtime-main.0f757c9c.js.map",
-    "static/js/2.d3f8c9b7.chunk.js": "/melissabarrera-portfolio/static/js/2.d3f8c9b7.chunk.js",
-    "static/js/2.d3f8c9b7.chunk.js.map": "/melissabarrera-portfolio/static/js/2.d3f8c9b7.chunk.js.map",
-    "static/js/3.27eb90e6.chunk.js": "/melissabarrera-portfolio/static/js/3.27eb90e6.chunk.js",
-    "static/js/3.27eb90e6.chunk.js.map": "/melissabarrera-portfolio/static/js/3.27eb90e6.chunk.js.map",
+    "main.css": "/melissabarrera-portfolio/static/css/main.f7a7d82b.chunk.css",
+    "main.js": "/melissabarrera-portfolio/static/js/main.ff221a93.chunk.js",
+    "main.js.map": "/melissabarrera-portfolio/static/js/main.ff221a93.chunk.js.map",
+    "runtime-main.js": "/melissabarrera-portfolio/static/js/runtime-main.beb481f8.js",
+    "runtime-main.js.map": "/melissabarrera-portfolio/static/js/runtime-main.beb481f8.js.map",
+    "static/js/2.98d0854c.chunk.js": "/melissabarrera-portfolio/static/js/2.98d0854c.chunk.js",
+    "static/js/2.98d0854c.chunk.js.map": "/melissabarrera-portfolio/static/js/2.98d0854c.chunk.js.map",
+    "static/js/3.ed2db684.chunk.js": "/melissabarrera-portfolio/static/js/3.ed2db684.chunk.js",
+    "static/js/3.ed2db684.chunk.js.map": "/melissabarrera-portfolio/static/js/3.ed2db684.chunk.js.map",
     "index.html": "/melissabarrera-portfolio/index.html",
-    "static/css/main.95994c88.chunk.css.map": "/melissabarrera-portfolio/static/css/main.95994c88.chunk.css.map",
-    "static/js/2.d3f8c9b7.chunk.js.LICENSE.txt": "/melissabarrera-portfolio/static/js/2.d3f8c9b7.chunk.js.LICENSE.txt",
-    "static/media/Melissa_Barrera_Resume.7fba80dd.PDF": "/melissabarrera-portfolio/static/media/Melissa_Barrera_Resume.7fba80dd.PDF",
+    "static/css/main.f7a7d82b.chunk.css.map": "/melissabarrera-portfolio/static/css/main.f7a7d82b.chunk.css.map",
+    "static/js/2.98d0854c.chunk.js.LICENSE.txt": "/melissabarrera-portfolio/static/js/2.98d0854c.chunk.js.LICENSE.txt",
+    "static/media/Melissa-Barrera-Resume.bd7b731a.PDF": "/melissabarrera-portfolio/static/media/Melissa-Barrera-Resume.bd7b731a.PDF",
     "static/media/SNA-NoSQL.png": "/melissabarrera-portfolio/static/media/SNA-NoSQL.7ae3b7fc.png",
-    "static/media/index.css": "/melissabarrera-portfolio/static/media/daisies-background.0b0db09b.jfif",
+    "static/media/bootcamp-certificate.bf5776cd.jpg": "/melissabarrera-portfolio/static/media/bootcamp-certificate.bf5776cd.jpg",
     "static/media/fly-high.png": "/melissabarrera-portfolio/static/media/fly-high.5f0fbd3f.png",
-    "static/media/melissa-image.3abb9b04.jpg": "/melissabarrera-portfolio/static/media/melissa-image.3abb9b04.jpg",
+    "static/media/me-image.ea1f3f4c.jpg": "/melissabarrera-portfolio/static/media/me-image.ea1f3f4c.jpg",
     "static/media/stuckInside.png": "/melissabarrera-portfolio/static/media/stuckInside.1ce9a25b.png",
     "static/media/superherosmash.png": "/melissabarrera-portfolio/static/media/superherosmash.3468ce7e.png",
     "static/media/team-generator.png": "/melissabarrera-portfolio/static/media/team-generator.1ea5fe8e.png",
@@ -24,9 +24,9 @@
     "static/media/weather.png": "/melissabarrera-portfolio/static/media/weather.d2ccc714.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f757c9c.js",
-    "static/js/2.d3f8c9b7.chunk.js",
-    "static/css/main.95994c88.chunk.css",
-    "static/js/main.f9f2ad31.chunk.js"
+    "static/js/runtime-main.beb481f8.js",
+    "static/js/2.98d0854c.chunk.js",
+    "static/css/main.f7a7d82b.chunk.css",
+    "static/js/main.ff221a93.chunk.js"
   ]
 }
