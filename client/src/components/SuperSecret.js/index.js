@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function SuperSecret() {
     const [data, setData] = useState('');
+
     useEffect(() => {
         fetch("/api/messages")
             .then(response => {
@@ -18,20 +19,22 @@ function SuperSecret() {
             });
     }, [])
 
-    console.log(data)
-
     // console.log(messages)
     return (
         <div className="container">
-            <div className="row align-items-center">
+            {!data ? (
+                <p>No messages!</p>
+            ) : (
+                <div className="row">
                 {data.map((message) => (
-                    <div className = "col-md-6">
-                        <p>{message.name}</p>
-                        <p>{message.email}</p>
-                        <p>{message.message}</p>
+                    <div className="col-md-12 messages">
+                        <p style={{ color: "white" }}>Name : {message.name}</p>
+                        <p style={{ color: "white" }}>Email: {message.email}</p>
+                        <p style={{ color: "white" }}>Message: {message.message}</p>
                     </div>
                 ))}
             </div>
+            )}
         </div>
     )
 }
