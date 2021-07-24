@@ -32,9 +32,29 @@ function Contact() {
         }
     }
 
-    function handleSubmit(e) {
+    // function handleSubmit(e) {
+        
+    //     console.log(formState);
+    // }
+
+    const handleSubmittedForm = (e) => { // Once the form has been submitted, this function will post to the backend
         e.preventDefault();
-        console.log(formState);
+        const postURL = "/api/messages" //Our previously set up route in the backend
+        fetch(postURL, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ // We should keep the fields consistent for managing this data later
+                name: name,
+                email: email, 
+                message: message
+            })
+        })
+        .then(()=>{
+            alert('You have been added to the system!');
+        })
     }
 
     return (
@@ -44,7 +64,7 @@ function Contact() {
                 <div className="col-md-6 mt-5">
                     <div className="row justify-content-center">
                         <div className="col align-self-center">
-                            <form id="contact" onSubmit={handleSubmit}>
+                            <form id="contact" onSubmit={handleSubmittedForm}>
                                 <div className="mb-3">
                                     <label className="form-label form-text">name</label>
                                     <input onBlur={handleChange} type="text" name="name" className="form-control" id="name" aria-describedby="emailHelp" defaultValue={name} />

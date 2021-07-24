@@ -1,4 +1,5 @@
 {
+  "proxy": "http://localhost:3001",
   "homepage": "http://melissabarrerafarias.github.io/melissabarrera-portfolio",
   "name": "melissabarrera-portfolio",
   "version": "0.1.0",
