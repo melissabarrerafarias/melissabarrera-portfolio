@@ -11,6 +11,7 @@
   --pink-sand: #e4c3ad;
   --baby-yellow: #f6efa6;  
 }
+
 /* google fonts available */ 
 /* font-family: 'Cabin', 'Rubik', 'Space Mono' */
 
@@ -23,6 +24,14 @@ a:link {
 }
 
 /* navigation */ 
+.fa-chevron-circle-down:before {
+  color: white;
+}
+
+#dropdown-menu:hover {
+  transform: rotate(180deg);
+}
+
 .navbar {
   background-color: #121212;
 }
@@ -159,7 +168,6 @@ a:link {
   -webkit-transform: rotate(45deg);
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  -webkit-animation: bounce 2s infinite;
   animation: arrow 2s infinite;
 }
 

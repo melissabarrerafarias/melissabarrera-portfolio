@@ -21,7 +21,8 @@ function Nav(props) {
             <nav className="navbar navbar-expand-lg navbar-light">
                 <a className="navbar-brand nav-text-name" href="#">melissaBarrera</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    {/* <span className="navbar-toggler-icon"></span> */}
+                    <i class="fas fa-chevron-circle-down" id = "dropdown-menu"></i>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav nav-text ml-auto">
