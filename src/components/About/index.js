@@ -14,7 +14,7 @@ function About() {
 
 
             <div className="split right" id="about-me-desc-lg">
-                <div className="center col-md-6">
+                <div className="center col-md-6 col-lg-6">
                     <Fade top>
                         <h1 className="about-me-header">Melissa Barrera</h1>
                         <h3 className="about-me-header">Full-Stack Web Developer</h3>

@@ -248,6 +248,20 @@ a:link {
 }
 
 /* media queries */ 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1200px) {
+  .about-me-header {
+    font-size: 20px;
+  }
+  
+  .profile-photo {
+    max-width: 150%; 
+    margin-left: -25% 
+  }
+  
+  .about-description {
+    font-size: 12px; 
+  }
+}
 
 @media (max-width: 767.98px) {
   .about-me-header {
@@ -257,6 +271,10 @@ a:link {
   
   .center {
     top: 52%;
+  }
+
+  .project-photo {
+    max-width: 100% ;
   }
   
   .about-description {
