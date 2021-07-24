@@ -32,13 +32,8 @@ function Contact() {
         }
     }
 
-    // function handleSubmit(e) {
-        
-    //     console.log(formState);
-    // }
-
     const handleSubmittedForm = (e) => { // Once the form has been submitted, this function will post to the backend
-        e.preventDefault();
+        setFormState({ name: '', email: '', message: '' })
         const postURL = "/api/messages" //Our previously set up route in the backend
         fetch(postURL, {
             method: 'POST',
@@ -51,10 +46,7 @@ function Contact() {
                 email: email, 
                 message: message
             })
-        })
-        .then(()=>{
-            alert('You have been added to the system!');
-        })
+        });
     }
 
     return (
