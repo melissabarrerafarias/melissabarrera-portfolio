@@ -51,8 +51,7 @@ function Contact() {
 
     return (
         <div className="container mt-5">
-            <div className="row">
-
+            <div className="row">   
                 <div className="col-md-6 mt-5">
                     <div className="row justify-content-center">
                         <div className="col align-self-center">
