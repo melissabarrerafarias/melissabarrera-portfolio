@@ -1,7 +1,6 @@
 const express = require("express"); 
 const mongoose = require('mongoose'); 
 const routes = require('./controllers');
-var cors = require('cors'); 
 const path = require('path');
 
 const app = express(); 
@@ -12,9 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // link up routes 
 app.use(routes); 
-
-
-app.use(cors()) // Use this after the variable declaration
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
