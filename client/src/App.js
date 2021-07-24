@@ -20,10 +20,10 @@ function App() {
         <Nav />
         <Switch> 
           <Route exact path = "/melissabarrera-portfolio" component = {About}/>
-          <Route exact path = "/contact" component = {Contact}/>
-          <Route exact path = "/resume" component = {Resume} />
-          <Route exact path = "/portfolio" component = {Portfolio}/>
-          <Route exact path = {PAGE} component = {SuperSecret}/>
+          <Route exact path = "/melissabarrera-portfolio/contact" component = {Contact}/>
+          <Route exact path = "/melissabarrera-portfolio/resume" component = {Resume} />
+          <Route exact path = "/melissabarrera-portfolio/portfolio" component = {Portfolio}/>
+          <Route exact path = {`/melissabarrera-portfolio/${PAGE}`} component = {SuperSecret}/>
         </Switch>
       </div>
     </Router>

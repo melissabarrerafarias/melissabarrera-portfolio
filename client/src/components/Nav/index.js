@@ -15,13 +15,13 @@ function Nav() {
                             <a className="nav-link mr-3" href="/melissabarrera-portfolio">home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="/contact">contact</a>
+                            <a className="nav-link mr-3" href="/melissabarrera-portfolio/contact">contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="/resume">resume</a>
+                            <a className="nav-link mr-3" href="/melissabarrera-portfolio/resume">resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link mr-3" href="/portfolio">portfolio</a>
+                            <a className="nav-link mr-3" href="/melissabarrera-portfolio/portfolio">portfolio</a>
                         </li>
                     </ul>
                 </div>
