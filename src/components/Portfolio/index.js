@@ -1,23 +1,9 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-// import Project from '../Project';
 import Fade from 'react-reveal/Fade';
-
-
 
 function Portfolio() {
     return (
         <main>
-            <Helmet>
-                <style>
-                    {`
-                            body {
-                                background-color: #191A1D;
-                            }
-                       `}
-                </style>
-            </Helmet>
-
             <section className="projects-div container">
                 <Fade bottom>
                     <div className="col-md-6">
@@ -30,11 +16,7 @@ function Portfolio() {
                     </div>
                 </Fade>
             </section>
-
-
-
             <hr className="project-line"></hr>
-
             <section className="container all-projects">
                 <div className="row">
                     <Fade left>
@@ -47,10 +29,8 @@ function Portfolio() {
                                 <a className="project-link" href="https://superherosmash.herokuapp.com/"><i class="far fa-hand-pointer"></i></a>
                                 <a className="project-link" href="https://github.com/melissabarrerafarias/superherosmash"><i className="fab fa-github"></i></a>
                             </div>
-
                         </div>
                     </Fade>
-
                     <Fade right>
                         <div className="col-md-6 project-indv" id = "stuckInside">
                             <img src={require(`../../assets/images/stuckInside.png`).default}
@@ -63,7 +43,6 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                     <Fade left>
                         <div className="col-md-6 project-indv" id = "fly-high">
                             <img src={require(`../../assets/images/fly-high.png`).default}
@@ -76,7 +55,6 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                     <Fade right>
                         <div className="col-md-6 project-indv" id = "weather">
                             <img src={require(`../../assets/images/weather.png`).default}
@@ -89,7 +67,6 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                     <Fade left>
                         <div className="col-md-6 project-indv" id = "tech-applied">
                             <img src={require(`../../assets/images/tech-applied.png`).default}
@@ -102,7 +79,6 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                     <Fade right>
                         <div className="col-md-6 project-indv" id = "team-generator">
                             <img src={require(`../../assets/images/team-generator.png`).default}
@@ -114,7 +90,6 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                     <Fade left>
                         <div className="col-md-6 project-indv" id = "noSQL">
                             <img src={require(`../../assets/images/SNA-NoSQL.png`).default}
@@ -126,12 +101,8 @@ function Portfolio() {
                             </div>
                         </div>
                     </Fade>
-
                 </div>
-
             </section>
-
-            {/* <Project /> */}
         </main>
     );
 }

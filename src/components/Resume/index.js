@@ -27,9 +27,7 @@ function Resume() {
                     <p className="resume-section">For a more detailed list of skills I have to offer, feel free to go over <a href={myResume} download="Melissa_Barrera_Resume" className ="resume-download">my resume</a>!</p>
                 </div>
             </div>
-
         </section>
-
     )
 }
 

@@ -1,21 +1,6 @@
 import React from 'react';
 
-function Nav(props) {
-
-    // const {
-    //     nav = [],
-    //     setCurrentNav,
-    //     currentNav,
-    //     contactSelected,
-    //     setContactSelected, 
-    //     portfolioSelected, 
-    //     setPortfolioSelected, 
-    //     aboutSelected, 
-    //     setAboutSelected, 
-    //     resumeSelected, 
-    //     setResumeSelected
-    // } = props
-
+function Nav() {
     return (
         <header className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light">

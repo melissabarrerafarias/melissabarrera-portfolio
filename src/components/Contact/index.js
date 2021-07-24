@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 
-
 function Contact() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
@@ -68,9 +67,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-
                 <div className="col-md-6 m-auto">
-                    
                     <div className="row justify-content-center">
                         <a className="mx-auto contact-links" href="https://www.linkedin.com/in/melissa-barrera-103b531b3/"><i className="fab fa-linkedin"></i></a>
                         <a className="mx-auto contact-links" href="https://github.com/melissabarrerafarias"><i className="fab fa-github-square"></i></a>
@@ -80,10 +77,7 @@ function Contact() {
                         <a className="mx-auto contact-links" href="mailto:melissabarrerafarias@gmail.com"><i className="fas fa-envelope-square"></i></a>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     );
 }
