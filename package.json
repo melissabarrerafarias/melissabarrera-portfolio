@@ -16,8 +16,11 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "build": "cd client && npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "cd client && npm run build",
+    "deploy": "cd client && gh-pages -d build",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
