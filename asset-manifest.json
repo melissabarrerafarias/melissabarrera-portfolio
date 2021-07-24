@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/melissabarrera-portfolio/static/css/main.f7a7d82b.chunk.css",
-    "main.js": "/melissabarrera-portfolio/static/js/main.ff221a93.chunk.js",
-    "main.js.map": "/melissabarrera-portfolio/static/js/main.ff221a93.chunk.js.map",
+    "main.js": "/melissabarrera-portfolio/static/js/main.9c090ba8.chunk.js",
+    "main.js.map": "/melissabarrera-portfolio/static/js/main.9c090ba8.chunk.js.map",
     "runtime-main.js": "/melissabarrera-portfolio/static/js/runtime-main.beb481f8.js",
     "runtime-main.js.map": "/melissabarrera-portfolio/static/js/runtime-main.beb481f8.js.map",
     "static/js/2.98d0854c.chunk.js": "/melissabarrera-portfolio/static/js/2.98d0854c.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.beb481f8.js",
     "static/js/2.98d0854c.chunk.js",
     "static/css/main.f7a7d82b.chunk.css",
-    "static/js/main.ff221a93.chunk.js"
+    "static/js/main.9c090ba8.chunk.js"
   ]
 }
