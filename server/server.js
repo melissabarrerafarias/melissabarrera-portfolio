@@ -1,26 +1,26 @@
-const express = require("express"); 
-const mongoose = require('mongoose'); 
+const express = require("express");
+const mongoose = require('mongoose');
 const routes = require('./controllers');
 const path = require('path');
 
-const app = express(); 
+const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// link up routes 
-app.use(routes); 
-
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-  }
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-  });
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/messages', { 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
+// link up routes 
+app.use(routes);
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/messages', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true
