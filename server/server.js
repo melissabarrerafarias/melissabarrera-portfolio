@@ -15,7 +15,7 @@ app.use(routes);
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/messages', {
   useFindAndModify: false,
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true 
 });
 
 if (process.env.NODE_ENV === 'production') {
