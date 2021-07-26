@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "if-env": "^1.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -24,7 +25,7 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed", 
+    "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
   "eslintConfig": {

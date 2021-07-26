@@ -1,20 +1,19 @@
 const { Schema, model } = require('mongoose');
+var mongoose = require('mongoose'); 
+mongoose.set('debug', true);
 
 const MessageSchema = new Schema({
     name: {
-        type: String, 
-        required: true
+        type: String
     },
     email: {
-        type: String, 
-        required: true
+        type: String
     }, 
     message: {
-        type: String, 
-        required: true
+        type: String
     }
 }); 
 
-const Message = model('Message', MessageSchema);
+const Message = model('Message', MessageSchema, 'Message');
 
 module.exports = Message;

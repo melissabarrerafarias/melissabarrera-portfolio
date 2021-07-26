@@ -32,7 +32,7 @@ function Contact() {
         }
     }
 
-    const handleSubmittedForm = (e) => { // Once the form has been submitted, this function will post to the backend
+    const handleSubmittedForm = () => { // Once the form has been submitted, this function will post to the backend
         setFormState({ name: '', email: '', message: '' })
         const postURL = "/api/messages" //Our previously set up route in the backend
         fetch(postURL, {
@@ -55,18 +55,18 @@ function Contact() {
                 <div className="col-md-6 mt-5">
                     <div className="row justify-content-center">
                         <div className="col align-self-center">
-                            <form id="contact" onSubmit={handleSubmittedForm}>
+                            <form id="contact" onSubmit={handleSubmittedForm} autocomplete="off">
                                 <div className="mb-3">
                                     <label className="form-label form-text">name</label>
-                                    <input onBlur={handleChange} type="text" name="name" className="form-control" id="name" aria-describedby="emailHelp" defaultValue={name} />
+                                    <input autocomplete="off" onBlur={handleChange} type="text" name="name" className="form-control" id="name" aria-describedby="emailHelp" defaultValue={name} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label form-text">email</label>
-                                    <input onBlur={handleChange} type="email" name="email" className="form-control" id="email" defaultValue={email} />
+                                    <input autocomplete="off" onBlur={handleChange} type="email" name="email" className="form-control" id="email" defaultValue={email} />
                                 </div>
                                 <div className="form-floating">
                                     <label className="form-text">message</label>
-                                    <textarea onBlur={handleChange} name="message" className="form-control" placeholder="leave a message and I'll get back to you soon! :D" defaultValue={message} id="message" style={{ height: "100px" }}></textarea>
+                                    <textarea autocomplete="off" onBlur={handleChange} name="message" className="form-control" placeholder="leave a message and I'll get back to you soon! :D" defaultValue={message} id="message" style={{ height: "100px" }}></textarea>
                                 </div>
                                 {errorMessage && (
                                     <div>

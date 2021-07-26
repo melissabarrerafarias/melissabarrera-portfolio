@@ -12,9 +12,7 @@ import Resume from './components/Resume';
 import SuperSecret from './components/SuperSecret.js';
 
 function App() {
-  const PAGE = process.env.SUPERSECRETCODE;
-  console.log(PAGE)
-
+  const REACT_APP_SECRET = process.env.REACT_APP_SECRET;
   return (
     <Router>
       <div>
@@ -24,7 +22,7 @@ function App() {
           <Route exact path = "/contact" component = {Contact}/>
           <Route exact path = "/resume" component = {Resume} />
           <Route exact path = "/portfolio" component = {Portfolio}/>
-          <Route exact path = {PAGE} component = {SuperSecret}/>
+          <Route exact path = {`/${REACT_APP_SECRET}`} component = {SuperSecret}/>
         </Switch>
       </div>
     </Router>

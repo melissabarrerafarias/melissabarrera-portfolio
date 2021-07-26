@@ -4,10 +4,10 @@ const Message = require('../../models');
 router.get('/', (req, res) => { // get all messages 
     Message.find({})
         .sort({ _id: -1 })
-        .then(userData => res.json(userData))
+        .then(data => res.json(data))
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(400).json(err);
         })
 });
 
